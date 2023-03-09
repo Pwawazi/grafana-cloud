@@ -12,7 +12,7 @@ scrape_configs:
     - targets: ["node-exporter:9100"]
 
 remote_write:
-- url: "https://prometheus-prod-05-gb-south-0.grafana.net/api/prom/push"
+- url: "https://prometheus<YOUR_REGION>.grafana.net/api/prom/push"
   basic_auth:
     username: "USER_NAME"
     password: "GRAFANA_API_KEY"
